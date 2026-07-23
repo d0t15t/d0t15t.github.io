@@ -10,9 +10,19 @@ A single-page static portfolio site for Isaac Bigsby Trogdon, hosted at `d0t15t.
 
 All servable site files live under `www/` — `index.html`, `style.css`, `robots.txt`, `sitemap.xml`, `llms.txt`, `humans.txt`, `site.webmanifest`, `assets/`. Repo-root files (`README.md`, `CLAUDE.md`, `.github/`) are project scaffolding, not part of the deployed site. Any new page or asset for the live site goes inside `www/`.
 
+## Local development
+
+No build step means "running" the site is just serving `www/` and opening a browser:
+
+```
+python3 -m http.server 8080 --directory www
+```
+
+Open `http://localhost:8080`. This serves exactly what ships to GitHub Pages — no transformation — so it's the fastest way to sanity-check a change. For auto-refresh on save while iterating on markup/CSS, use `npx live-server www --port=8080` instead (via `npx` so no dependency gets added to the repo).
+
 ## Deployment
 
-Pushing to `master` triggers `.github/workflows/static.yml`, which uploads `./www` (not the repo root) and deploys it to GitHub Pages via `actions/deploy-pages`. There is no build/compile step — whatever is committed under `www/` is what ships. Verify changes by opening `www/index.html` in a browser; there's no local dev server or test suite.
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which uploads `./www` (not the repo root) and deploys it to GitHub Pages via `actions/deploy-pages`. There is no build/compile step — whatever is committed under `www/` is what ships.
 
 ## Architecture notes
 
