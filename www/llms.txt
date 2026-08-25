@@ -1,2 +1,20 @@
-Isaac Bigsby Trogdon
-Senior Software Engineer...
+# Isaac Bigsby Trogdon
+
+> Senior Software Engineer (Enterprise Web Platforms & AI Applications), Berlin, Germany. 15+ years building production Drupal/PHP platforms for enterprise clients; since 2022 focused on bringing LLMs, Retrieval-Augmented Generation, and vector search into those platforms as maintained production features. Original author and maintainer of three officially released Drupal AI contrib modules.
+
+## Key facts
+
+- Current role: Senior Full-Stack Developer at LOOM GmbH (Berlin), Nov 2018–present, AI-focused since 2022.
+- Open source: author/maintainer of ai_assistant_ui, ai_chatlog, and ai_insights — official Drupal.org contrib modules generalized from real production requirements.
+- Core stack: PHP, Drupal (7–10), Symfony, Python (Flask), LangChain, OpenAI API, React, TypeScript, Qdrant, Milvus, Docker.
+- Location: Berlin, Germany. Languages: English (native), German (fluent).
+- Education: B.A. with Honors, Cultural Studies & German Studies, University of North Carolina at Chapel Hill (1997–2002).
+
+## Pages
+
+- [Portfolio](https://d0t15t.github.io/): full profile, project write-ups, skills, career timeline, and contact/CV.
+
+## Contact
+
+- Email: mr@dyss.net
+- Drupal.org: https://www.drupal.org/u/d0t15t
