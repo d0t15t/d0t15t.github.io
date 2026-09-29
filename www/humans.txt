@@ -1,1 +1,11 @@
-Human-crafted.
+/* TEAM */
+Developer: Isaac Bigsby Trogdon
+Contact: mr [at] dyss.net
+GitHub: https://github.com/d0t15t/
+Location: Berlin, Germany
+
+/* SITE */
+Last update: 2026-09-29
+Language: English
+Standards: HTML5, CSS3
+Built by hand: no framework, no build step
