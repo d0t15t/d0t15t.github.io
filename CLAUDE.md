@@ -26,8 +26,8 @@ Pushing to `main` triggers `.github/workflows/deploy.yml`, which uploads `./www`
 
 ## Architecture notes
 
-- `www/index.html` is the entire site: hero section, then `<section>` blocks for Projects, Open Source, Timeline, Philosophy, and Contact, anchored by in-page nav links (`#projects`, `#opensource`, `#timeline`, `#contact`). Keep new sections consistent with this single-file, semantic-HTML structure rather than introducing a templating system.
+- `www/index.html` is the entire site: hero section (name, lead, headshot, nav), then `<section>` blocks for About, Work, Open source, Path, Toolbox, and Contact, anchored by in-page nav links (`#about`, `#projects`, `#opensource`, `#timeline`, `#skills`, `#contact`). Copy is written in first person; keep it factual (the CV PDF is the source of truth) and avoid résumé-speak. Keep new sections consistent with this single-file, semantic-HTML structure rather than introducing a templating system.
 - `www/index.html` embeds JSON-LD (`schema.org/ProfilePage`) in a `<script type="application/ld+json">` block. If bio details (name, job title, skills in `knowsAbout`) change in the visible content, update this block too so it stays in sync.
-- `www/style.css` is intentionally tiny (single line, no preprocessor). Follow its existing terse, single-line style rather than reformatting into multi-line/BEM conventions.
+- `www/style.css` is intentionally tiny (single line, no preprocessor). Follow its existing terse, single-line style rather than reformatting into multi-line/BEM conventions. Colors are CSS custom properties on `:root` with a `prefers-color-scheme: dark` override, so new rules should use the variables rather than hard-coded colors. Headings use the Newsreader webfont from Google Fonts with a serif fallback stack.
 - SEO/crawler files under `www/` — `robots.txt`, `sitemap.xml`, `llms.txt`, `humans.txt`, `site.webmanifest` — are minimal and manually maintained. `sitemap.xml` currently has no `<url>` entries; add one if additional pages are ever introduced.
 - `www/assets/` exists but is currently empty.
